@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./style.css">
+    <title>Dorik-URL shortner</title>
+</head>
+
+<body>
+    <form id="fLongURL" class="fLongURL">
+        <label for="fLongUrl">Write Long URL:</label><br><br>
+        <input type="text" id="fLongURLInput" class="fLongURLInput" name="fLongURLInput" placeholder="Type long URL here">
+        <input type="submit" class="fLongSubmitBtn" value="Generate Short URL">
+        <p class="shortOut"><strong>Your Short URL is: </strong><p  id="shortOutlnk" class="shortOutlnk"></p></p>
+        <button id="copyTextBtn" class="copyTextBtn">Copy</button>
+    </form>
+
+    <form id="fShortURL" class="fShortURL">
+        <label for="fShortUrl">Write Long URL:</label><br><br>
+        <input type="text" id="fShortURLInput" class="fShortURLInput" name="fShortURLInput" placeholder="Type short URL here">
+        <input type="submit" class="fShortSubmitBtn" value="Retrieve Long URL">
+        <p class="longOut"><strong>The Original URL is: </strong><p id="longOutlnk" class="longOutlnk"></p></p>
+        <button id="copyTextBtn" class="copyTextBtn">Copy</button>
+    </form>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
