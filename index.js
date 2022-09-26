@@ -6,9 +6,10 @@ function CopyLongOut() {
     SpeechRecognitionAlternative('Copied to clipboard ' + copyText.value);
 }
 function CopyShortOut() {
-    const copyText = document.getElementById('longOutlnk');
+    const copyText = document.getElementById('shortOutlnk');
     copyText.select();
     copyText.setSelectionRange(0, 99999);
     navigator.clipboard.writeText(copyText.value);
     SpeechRecognitionAlternative('Copied to clipboard ' + copyText.value);
 }
+
